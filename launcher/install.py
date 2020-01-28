@@ -64,7 +64,6 @@ class Install:
         self.firebase_handler = FirebaseHandler(self.google_cloud_project)
         self.bucket_notification_handler = BucketNotificationHandler(self.upload_pub_sub_topic, self.upload_subscription, self.upload_bucket_url)
 
-
     def main(self):
         self.set_default_project_for_gcloud()
         self.enable_apis()
@@ -379,6 +378,7 @@ class IllegalArgumentException(Exception):
 def log(text):
     dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print ("%s: %s" % (dt, text))
+
 
 if __name__ == "__main__":
     try:
