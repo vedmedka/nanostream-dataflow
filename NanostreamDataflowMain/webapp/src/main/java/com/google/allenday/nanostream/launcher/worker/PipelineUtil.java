@@ -18,6 +18,7 @@ import static com.google.apphosting.api.ApiProxy.getCurrentEnvironment;
 import static java.net.HttpURLConnection.HTTP_OK;
 
 class PipelineUtil {
+    public static final String MONITORING_API_BASE_URI = "https://monitoring.googleapis.com/v3/";
     public static final String DATAFLOW_API_BASE_URI = "https://dataflow.googleapis.com/v1b3/";
     public static final String DATAFLOW_JOB_STATE_CANCELLED = "JOB_STATE_CANCELLED";
 
